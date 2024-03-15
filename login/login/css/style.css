@@ -1,0 +1,8 @@
+
+.contenedor{
+padding-top: 100px;
+display: flex;
+flex-direction: column; /* Para alinear verticalmente */
+justify-content: center; /* Centrar verticalmente */
+align-items: center; /* Centrar horizontalmente */
+}
