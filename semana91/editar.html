@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Nombre</label><br>
+    <input type="text" name="" id="nombre"><br>
+    <label for="">Fecha de nacimiento</label><br>
+    <input type="date" name="" id="fecha"><br>
+    <label for="">Genero</label><br>
+    <select name="" id="genero">
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+    </select>
+    <br>
+    <label for="">Departamento</label><br>
+    <input type="text" name="" id="departamento"><br>
+    <label for="">Ciudad</label><br>
+    <input type="text" name="" id="ciudad"><br>
+    <label for="">Numero de teléfono</label><br>
+    <input type="text" name="" id="telefono"><br>
+    <label for="">Direccion</label><br>
+    <input type="text" name="" id="direccion"><br>
+    <br><br>
+    <input type="button" value="Editar información" onclick="informacion()">
+</body>
+</html>
+
+<script>
+    var urlParams = new URLSearchParams(window.location.search)
+
+var nombre = urlParams.get('nombre')
+var fecha = urlParams.get('fecha')
+var genero = urlParams.get('genero')
+var departamento = urlParams.get('departamento')
+var ciudad = urlParams.get('ciudad')
+var telefono = urlParams.get('telefono')
+var direccion = urlParams.get('direccion')
+
+document.getElementById('nombre').value = nombre
+document.getElementById('fecha').value = fecha
+document.getElementById('genero').value= genero
+document.getElementById('departamento').value =  departamento
+document.getElementById('ciudad').value = ciudad
+document.getElementById('telefono').value =  telefono       
+document.getElementById('direccion').value =  direccion
+
+</script>
+<script src="./main.js"></script>
